@@ -35,24 +35,28 @@
 
 
     <main>
-        <section>
+        <h1 class="titulo-inicio-sesion">INICIAR SESIÓN</h1>
+        <section class="main-inicio-sesion">
+            <div class="seccion-inicio-sesion">
+                <form class="contenedor-fomulario-inicio-sesion" action="" method="post">
+                    <fieldset class="formulario-inicio-sesion">
+                        <label class="email-inicio-sesion" for="">
+                            <span>Email</span>
+                            <input class="input-email-inicio-sesion" type="email"  id="Email">
+                        </label>
+                        <label class="pass-inicio-sesion" for="">
+                            <span>Contraseña</span>
+                            <input class="input-pass-inicio-sesion" type="password" id="Password">
+                        </label>
+                    </fieldset>
+                    <div class="btn-inicio-sesion"><input type="submit" value="INICIAR SESIÓN"></div>
+                </form>
             <div>
-                <h1>INICIAR SESIÓN</h1>
-            <form action="" method="post">
-                <fieldset>
-                    <label for="">
-                        <span>Email</span>
-                        <input type="text"  id="Email">
-                    </label>
-                    <label for="">
-                        <span>Contraseña</span>
-                        <input type="text" id="Contraseña">
-                    </label>
-                </fieldset>
-                <input type="submit" value="INICIAR SESIÓN">
-            </form>
-            <a href=""><p>¿Olvidaste tu contraseña?</p></a>
-            <p>¿No tenés cuenta aún?</p><a href=""><p>Crear cuenta</p></a>
+        </section>
+        <section>
+            <div class="seccion2-inicio-sesion">
+                <a href=""><p>¿Olvidaste tu contraseña?</p></a>
+                <p>¿No tenés cuenta aún?</p><a href=""><p>Crear cuenta</p></a>
             </div>
         </section>
     </main>
