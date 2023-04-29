@@ -234,12 +234,157 @@ h1{
     grid-area: calcos;
 }
 
+/* TIENDA MAIN */
+
+/* .main-tienda{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: auto auto;
+} 
+
+.seccion-tienda div{
+    width: 300px;
+    height: 500x;
+}
+.seccion-tienda{
+    width: 1440px;
+    padding: 50px 50px;
+    align-content: space-around;
+    gap: 16px;
+} */
 
 
 
+/* INFO MAIN */
 
+.seccion-principal-info{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.seccion-principal-info div{
+    display: flex;
+    background-color: #d9d9d9;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.seccion-principal-info div img{
+    display: flex;
+    padding: 16px 50px;
+}
+
+.titulo-info{
+    text-align: center;
+    color: #d9d9d9;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.seccion-secundaria-info div{
+    display: flex;
+    background-color: #d9d9d9;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.seccion-secundaria-info{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.seccion-secundaria-info div img{
+    display: flex;
+    padding: 16px 50px;
+}
+
+/*  MAIN CONTACTO */
+
+.titulo-contacto{
+    text-align: center;
+    padding: 35px;
+}
+.seccion-contacto{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.formulario-contacto{
+    display: flex;
+    width: 700px;
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.nombre{
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.formulario-contacto label span{
+    color: #d9d9d9;
+    width: 70px;
+}
+
+.email{
+    display: flex;
+    width: 100%;
+}
+
+.telefono{
+    display: flex;
+    width: 100%;
+}
+
+.mensaje{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 30px;
+}
+
+
+
+.input-nombre{
+    width: 600px;
+}
+
+.input-email{
+    width: 600px;
+}
+
+.input-telefono{
+    width: 600px;
+}
+
+.input-mensaje{
+    width: 600px;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+}
 
 /*  MEDIA QUERIES */
+
+
 
 
 @media(max-width: 768px){
