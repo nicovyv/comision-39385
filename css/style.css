@@ -190,14 +190,17 @@ h1{
     width: 336px;
     height: 50px;
     text-align: center;
+    padding-top: 10px;
     margin: 5px;
     grid-area: socks;
+
 }
 .llaveros-main{
     background-color: #d9d9d9;
     width: 336px;
     height: 50px;
     text-align: center;
+    padding-top: 10px;
     margin: 5px;
     grid-area: llaveros;
 }
@@ -206,6 +209,7 @@ h1{
     width: 336px;
     height: 50px;
     text-align: center;
+    padding-top: 10px;
     margin: 5px;
     grid-area: pañuelos;
 }
@@ -214,6 +218,7 @@ h1{
     width: 336px;
     height: 50px;
     text-align: center;
+    padding-top: 10px;
     margin: 5px;
     grid-area: scrunchies;
 }
@@ -222,6 +227,7 @@ h1{
     width: 336px;
     height: 50px;
     text-align: center;
+    padding-top: 10px;
     margin: 5px;
     grid-area: pilusos;
 }
@@ -230,6 +236,7 @@ h1{
     width: 336px;
     height: 50px;
     text-align: center;
+    padding-top: 10px;
     margin: 5px;
     grid-area: calcos;
 }
@@ -508,6 +515,106 @@ h1{
     .navbar li a{
         font-size: 16px;
     }
+
+    footer{
+        width: 100%;
+    }
+
+/* .seccion-cards-index{
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+} */
+.index-grid{
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "socks img1"
+    "llaveros img1"
+    "panuelos img1"
+    "scrunchies img2 "
+    "pilusos img2"
+    "calcos img2";
+}
+
+
+.img-main1{
+    align-self: center;
+    justify-self: end;
+    grid-area: img1;
+}
+.img-main2{
+    width: 194px;
+    height: 215px;
+    align-self: center;
+    justify-self: end;
+    grid-area: img2;
+}
+.img-main3{
+    width: 194px;
+    height: 215px;
+    align-self: center;
+    justify-self: center;
+    display: none;
+}
+
+
+.socks-main{
+    background-color: #d9d9d9;
+    width: 336px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 5px;
+    grid-area: socks;
+
+}
+.llaveros-main{
+    background-color: #d9d9d9;
+    width: 336px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 5px;
+    grid-area: llaveros;
+}
+.panuelos-main{
+    background-color: #d9d9d9;
+    width: 336px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 5px;
+    grid-area: panuelos;
+}
+.scrunchies-main{
+    background-color: #d9d9d9;
+    width: 336px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 5px;
+    grid-area: scrunchies;
+}
+.pilusos-main{
+    background-color: #d9d9d9;
+    width: 336px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 5px;
+    grid-area: pilusos;
+}
+.calcos-main{
+    background-color: #d9d9d9;
+    width: 336px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 5px;
+    grid-area: calcos;
+}
 
 
 }
