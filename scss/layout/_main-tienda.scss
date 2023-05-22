@@ -1,0 +1,23 @@
+.main-tienda{
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(0, 0, 0);
+    background-image: url(../assets/img-fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: auto auto;
+}
+.seccion-tienda div{
+    width: 300px;
+    height: 500x;
+}
+.seccion-tienda{
+    width: 1440px;
+    padding: 50px 50px;
+    align-content: space-around;
+    gap: 16px;
+}

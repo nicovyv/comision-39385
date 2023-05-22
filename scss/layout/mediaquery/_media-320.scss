@@ -1,0 +1,44 @@
+@media(max-width:320px){
+    .index-grid{
+        h3{
+            width: 300px;
+        }
+    }
+    
+    .main-contacto{
+        section{
+            form{
+                fieldset{
+                    width: 300px;
+                    label{
+                        input{
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    .main-inicio-sesion{
+        section{
+            div{
+                form{
+                    width: 300px;
+                    fieldset{
+                        width: 300px;
+                        label{
+                            input{
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

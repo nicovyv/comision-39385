@@ -1,0 +1,33 @@
+@media(max-width:375px){
+    .main-contacto{
+        section{
+            form{
+                fieldset{
+                    width: 350px;
+                    label{
+                        input{
+                            width: 175px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-inicio-sesion{
+        section{
+            div{
+                form{
+                    width: 350px;
+                    fieldset{
+                        width: 350px;
+                        label{
+                            input{
+                                width: 175px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

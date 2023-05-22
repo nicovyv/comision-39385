@@ -1,0 +1,14 @@
+@media(max-width:1024px){
+    .seccion-cards-index{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .index-grid{
+            justify-self: center;
+            align-items: center;
+            h3{
+                width: 300px;
+            }
+        }
+    }
+}

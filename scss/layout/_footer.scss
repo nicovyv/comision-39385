@@ -1,0 +1,26 @@
+footer{
+    display: flex;
+    width: 100%;
+    .iconos{
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+.icono-wa{
+    width: 35px;
+    height: 35px;
+}
+
+.icono-ig{
+    width: 32px;
+    height: 32px;
+}
+
+.logo-footer{
+    width: 100px;
+    height: 100px;
+}

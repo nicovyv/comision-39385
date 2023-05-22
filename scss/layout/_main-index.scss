@@ -1,0 +1,91 @@
+.main-index{
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(0, 0, 0);
+    background-image: url(../assets/img-fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-index-seccion1{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h1{
+        color: white;
+        font-size: 50px;
+        text-shadow: 4px 4px black;
+    }
+    img{
+        width: 215px;
+        height: 215px;
+    }
+}
+.seccion-cards-index{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.index-grid{
+    width: 90%;
+    height: 480px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 62px 300px 62px;
+    grid-template-areas: 
+    "socks llaveros pañuelos" 
+    "img1 img2 img3" 
+    "scrunchies pilusos calcos";
+    h3{
+        background-color: #d9d9d9;
+        width: 336px;
+        height: 50px;
+        text-align: center;
+        padding-top: 10px;
+        margin: 5px;
+    }
+}
+
+.socks-main{
+    grid-area: socks;
+}
+.llaveros-main{
+    grid-area: llaveros;
+}
+.panuelos-main{
+    grid-area: pañuelos;
+}
+.scrunchies-main{
+    grid-area: scrunchies;
+}
+.pilusos-main{
+    grid-area: pilusos;
+}
+.calcos-main{
+    grid-area: calcos;
+}
+.img-main1{
+    grid-area: img1;
+    align-self: center;
+    justify-self: center;
+}
+
+.img-main2{
+    grid-area: img2;
+    width: 194px;
+    height: 215px;
+    align-self: center;
+    justify-self: center;
+}
+.img-main3{
+    grid-area: img3;
+    width: 194px;
+    height: 215px;
+    align-self: center;
+    justify-self: center;
+}
+
+
