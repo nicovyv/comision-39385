@@ -7,17 +7,86 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        text-align: center;
+        color: #d9d9d9;
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-shadow: 4px 4px black;
+    }
+    section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.tienda-grid{
+    width: 90%;
+    height: auto;
     display: grid;
-    grid-template-columns: 4fr;
-    grid-template-rows: auto auto;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "card-tienda1 card-tienda2 card-tienda3 card-tienda4"
+    "card-tienda5 card-tienda6 card-tienda7 card-tienda8";
+    a{
+        width: 275px;
+        height: 350px;
+        background-color: #d9d9d9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        text-decoration: none;
+        img{
+            width: 213px;
+            height: 250px;
+        }
+        h3{
+            color: black;
+            padding-top: 16px;
+        }
+        p{
+            color: black;
+            padding-top: 16px;
+            text-decoration: underline;
+        }
+    }
 }
-.seccion-tienda div{
-    width: 300px;
-    height: 500x;
+
+.gorro{
+    grid-area: card-tienda1;
 }
-.seccion-tienda{
-    width: 1440px;
-    padding: 50px 50px;
-    align-content: space-around;
-    gap: 16px;
+.tennis{
+    grid-area: card-tienda2;
+}
+.panuelo{
+    grid-area: card-tienda3;
+}
+.medida-cana{
+    grid-area: card-tienda4;
+}
+.piluso{
+    grid-area: card-tienda5;
+}
+.scrunchies{
+    grid-area: card-tienda6;
+}
+.soquetes{
+    grid-area: card-tienda7;
+}
+.calco{
+    grid-area: card-tienda8;
 }
