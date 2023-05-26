@@ -1,4 +1,5 @@
 @media(max-width:1024px){
+
     .seccion-cards-index{
         display: flex;
         width: 100%;
@@ -11,4 +12,22 @@
             }
         }
     }
+
+
+    .tienda-grid{
+        a{
+            width: 200px;
+            height: 300px;
+            img{
+                width: 180px;
+                height: 210px;
+            }
+        }
+    }
+
+
+}
+
+.main-inicio-sesion{
+    height: auto;
 }

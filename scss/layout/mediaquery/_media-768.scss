@@ -1,6 +1,6 @@
 @media(max-width: 768px){
 
-    .header{
+    header{
         width: 100%;
         height: 100px;
         display: grid;
@@ -9,16 +9,30 @@
         grid-template-areas: 
         "logo titulo"
         ". nav";
+        nav{
+            height: 50px;
+            grid-area: nav;
+            justify-self: center;
+            ul{
+                li{
+                    a{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
 
     }
 
-    .logo-header-grid{
-        grid-area: logo;
-    }
+    
     .logo-header{
         width: 100px;
         height: 100px;
         margin: 0;
+        img{
+            width: 100px;
+            height: 100px;
+        }
     }
     .titulo-header{
         grid-area: titulo;
@@ -133,6 +147,61 @@
 }
 
 
+.tienda-grid{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "card-tienda1 card-tienda2"
+    "card-tienda3 card-tienda4"
+    "card-tienda5 card-tienda6"
+    "card-tienda7 card-tienda8";
+    a{
+        justify-self: center;
+    }
+}
+
+.seccion-principal-info{
+    div{
+        width: 160px;
+        height: 160px;
+        justify-content: center;
+        img{
+            width: 75px;
+            height: 60px;
+            padding: 0px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        h3{
+            font-size: 16px;
+            padding-top: 20px;
+        }
+    }
+}
+
+.seccion-secundaria-info{
+    div{
+        width: 160px;
+        height: 160px;
+        justify-content: center;
+        img{
+            width: 75px;
+            height: 60px;
+            padding: 0px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        h3{
+            font-size: 16px;
+            padding-top: 15px;
+        }
+    }
+}
+
+
+
+
+
 
 .seccion-inicio-sesion{
     width: 100%;
@@ -149,14 +218,6 @@
     margin: 0px;
     padding: 0px;
 }
-
-
-
-
-
-
-
-
 
 
 

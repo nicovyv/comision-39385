@@ -49,11 +49,13 @@ header {
         height: 25px; }
 
 .logo-header {
-  width: 50px;
-  height: 50px;
-  margin-left: 35px;
-  margin-left: 20px;
-  align-items: start; }
+  display: flex;
+  justify-content: center; }
+  .logo-header img {
+    width: 50px;
+    height: 50px;
+    align-items: start;
+    padding: 0px; }
 
 .titulo-header {
   display: flex;
@@ -87,7 +89,8 @@ header {
 .seccion-cards-index {
   display: flex;
   width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 40px; }
 
 .index-grid {
   width: 90%;
@@ -287,7 +290,8 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 720px; }
   .main-contacto h1 {
     text-align: center;
     color: #d9d9d9;
@@ -306,7 +310,8 @@ header {
       gap: 40px; }
       .main-contacto section form fieldset label {
         display: flex;
-        width: 100%; }
+        width: 100%;
+        padding-left: 10px; }
         .main-contacto section form fieldset label span {
           color: #d9d9d9;
           width: 70px; }
@@ -321,7 +326,7 @@ header {
   padding-top: 30px; }
 
 .mensaje {
-  height: 300px;
+  height: 200px;
   padding-bottom: 30px; }
 
 .main-inicio-sesion {
@@ -331,7 +336,8 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 720px; }
   .main-inicio-sesion h1 {
     text-align: center;
     color: #d9d9d9;
@@ -381,7 +387,8 @@ header {
 
 footer {
   display: flex;
-  width: 100%; }
+  width: 100%;
+  height: 100px; }
   footer .iconos {
     display: flex;
     flex-grow: 1;
@@ -410,22 +417,38 @@ footer {
       justify-self: center;
       align-items: center; }
       .seccion-cards-index .index-grid h3 {
-        width: 300px; } }
+        width: 300px; }
+  .tienda-grid a {
+    width: 200px;
+    height: 300px; }
+    .tienda-grid a img {
+      width: 180px;
+      height: 210px; } }
+
+.main-inicio-sesion {
+  height: auto; }
 
 @media (max-width: 768px) {
-  .header {
+  header {
     width: 100%;
     height: 100px;
     display: grid;
     grid-template-columns: 100px auto;
     grid-template-rows: 50px 50px;
     grid-template-areas: "logo titulo" ". nav"; }
-  .logo-header-grid {
-    grid-area: logo; }
+    header nav {
+      height: 50px;
+      grid-area: nav;
+      justify-self: center; }
+      header nav ul li a {
+        font-size: 16px; }
   .logo-header {
     width: 100px;
     height: 100px;
     margin: 0; }
+    .logo-header img {
+      width: 100px;
+      height: 100px; }
   .titulo-header {
     grid-area: titulo;
     justify-self: center;
@@ -507,6 +530,38 @@ footer {
     padding-top: 10px;
     margin: 5px;
     grid-area: calcos; }
+  .tienda-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "card-tienda1 card-tienda2" "card-tienda3 card-tienda4" "card-tienda5 card-tienda6" "card-tienda7 card-tienda8"; }
+    .tienda-grid a {
+      justify-self: center; }
+  .seccion-principal-info div {
+    width: 160px;
+    height: 160px;
+    justify-content: center; }
+    .seccion-principal-info div img {
+      width: 75px;
+      height: 60px;
+      padding: 0px;
+      margin-top: 20px;
+      margin-left: 40px; }
+    .seccion-principal-info div h3 {
+      font-size: 16px;
+      padding-top: 20px; }
+  .seccion-secundaria-info div {
+    width: 160px;
+    height: 160px;
+    justify-content: center; }
+    .seccion-secundaria-info div img {
+      width: 75px;
+      height: 60px;
+      padding: 0px;
+      margin-top: 20px;
+      margin-left: 40px; }
+    .seccion-secundaria-info div h3 {
+      font-size: 16px;
+      padding-top: 15px; }
   .seccion-inicio-sesion {
     width: 100%;
     display: flex;
@@ -527,11 +582,36 @@ footer {
     width: auto; } }
 
 @media (max-width: 425px) {
-  .header {
+  header {
     display: flex;
     width: 100%;
     height: 550px;
     flex-direction: column; }
+    header nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center; }
+      header nav ul {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: end;
+        padding-top: 25px;
+        gap: 40px;
+        margin: 0px; }
+        header nav ul li a {
+          font-size: 20px;
+          background-color: #d9d9d9;
+          border: solid black;
+          border-radius: 15%;
+          padding: 0px 5px; }
+      header nav div {
+        width: 30px;
+        display: flex;
+        align-content: end; }
   .logo-header {
     display: flex;
     width: 100%;
@@ -544,32 +624,6 @@ footer {
       height: 100px; }
   .titulo-header {
     display: none; }
-  .nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center; }
-  .navbar {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: end;
-    padding-top: 25px;
-    gap: 40px;
-    margin: 0px; }
-  .navbar li a {
-    font-size: 20px;
-    background-color: #d9d9d9;
-    border: solid black;
-    border-radius: 15%;
-    padding: 0px 5px; }
-  .carrito {
-    width: 30px;
-    display: flex;
-    align-content: end;
-    margin: 0px; }
   .main-index-seccion1 {
     display: flex;
     flex-direction: column;
@@ -613,6 +667,43 @@ footer {
   .calcos-main {
     width: 200px;
     height: 50px; }
+  .tienda-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "card-tienda1" "card-tienda2" "card-tienda3" "card-tienda4" "card-tienda5" "card-tienda6" "card-tienda7" "card-tienda8"; }
+    .tienda-grid a {
+      justify-self: center; }
+  .seccion-principal-info {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 30px; }
+    .seccion-principal-info div {
+      width: 120px;
+      height: 120px;
+      justify-content: center; }
+      .seccion-principal-info div img {
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+        margin-top: 20px;
+        margin-left: 35px; }
+      .seccion-principal-info div h3 {
+        font-size: 10px;
+        padding-top: 10px; }
+  .seccion-secundaria-info div {
+    width: 120px;
+    height: 120px;
+    justify-content: center; }
+    .seccion-secundaria-info div img {
+      width: 50px;
+      height: 50px;
+      padding: 0px;
+      margin-top: 20px;
+      margin-left: 35px; }
+    .seccion-secundaria-info div h3 {
+      font-size: 10px;
+      padding: 5px 25px; }
   .main-contacto section form fieldset {
     width: 400px; }
     .main-contacto section form fieldset label input {

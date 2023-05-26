@@ -49,11 +49,14 @@ header{
 }
 
 .logo-header{
-    width: 50px;
-    height: 50px;
-    margin-left: 35px;
-    margin-left: 20px;
-    align-items: start;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 50px;
+        height: 50px;
+        align-items: start;
+        padding: 0px;
+    }
 }
 
 .titulo-header{
