@@ -8,30 +8,34 @@ body {
   font-family: 'Playfair Display', serif; }
 
 header {
+  display: grid;
+  grid-template-columns: 100px 175px auto;
+  grid-template-rows: none;
+  justify-content: none;
+  align-items: none;
   width: 100%;
   height: 50px;
   display: grid;
-  background-color: white;
-  grid-template-columns: 100px 175px auto; }
+  background-color: white; }
   header nav {
     display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: center;
     width: auto;
     height: 50px;
-    align-items: center;
     justify-self: end; }
     header nav ul {
       display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
       width: 100%;
       height: 50px;
-      align-items: end;
-      flex-direction: row;
       gap: 15px;
-      justify-content: start;
       margin-right: 20px;
-      align-items: center;
       list-style-type: none; }
       header nav ul li a {
-        display: flex;
         text-decoration: none;
         color: black;
         font-size: 25px;
@@ -41,16 +45,20 @@ header {
         padding: 0px 5px; }
     header nav div {
       display: flex;
+      flex-direction: row;
+      justify-content: none;
+      align-items: center;
       width: 50px;
-      height: 50px;
-      align-items: center; }
+      height: 50px; }
       header nav div img {
         width: 30px;
         height: 25px; }
 
 .logo-header {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: none; }
   .logo-header img {
     width: 50px;
     height: 50px;
@@ -58,7 +66,6 @@ header {
     padding: 0px; }
 
 .titulo-header {
-  display: flex;
   width: 175px;
   height: 40px;
   font-size: 20px;
@@ -78,7 +85,7 @@ header {
   justify-content: space-around;
   padding-top: 20px;
   padding-bottom: 20px; }
-  .main-index-seccion1 h1 {
+  .main-index-seccion1 h1, .main-index-seccion1 .main-info h2, .main-info .main-index-seccion1 h2 {
     color: white;
     font-size: 50px;
     text-shadow: 4px 4px black; }
@@ -107,6 +114,8 @@ header {
     text-align: center;
     padding-top: 10px;
     margin: 5px; }
+    .index-grid h3:hover {
+      transform: scale(1.1); }
 
 .socks-main {
   grid-area: socks; }
@@ -158,7 +167,7 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  .main-tienda h1 {
+  .main-tienda h1, .main-tienda .main-info h2, .main-info .main-tienda h2 {
     text-align: center;
     color: #d9d9d9;
     font-size: 30px;
@@ -172,25 +181,29 @@ header {
     justify-content: center; }
 
 .tienda-grid {
-  width: 90%;
-  height: auto;
   display: grid;
-  justify-content: center;
-  gap: 30px;
-  padding-bottom: 40px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "card-tienda1 card-tienda2 card-tienda3 card-tienda4" "card-tienda5 card-tienda6 card-tienda7 card-tienda8"; }
+  justify-content: center;
+  align-items: none;
+  grid-template-areas: "card-tienda1 card-tienda2 card-tienda3 card-tienda4" "card-tienda5 card-tienda6 card-tienda7 card-tienda8";
+  width: 90%;
+  height: auto;
+  gap: 30px;
+  padding-bottom: 40px; }
   .tienda-grid a {
-    width: 275px;
-    height: 350px;
-    background-color: #d9d9d9;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 275px;
+    height: 350px;
+    background-color: #d9d9d9;
     border-radius: 15px;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 400ms; }
+    .tienda-grid a:hover {
+      transform: scale(1.1); }
     .tienda-grid a img {
       width: 213px;
       height: 250px; }
@@ -234,13 +247,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
-  .main-info h1 {
-    text-align: center;
-    color: #d9d9d9;
-    font-size: 30px;
-    padding-top: 30px;
-    text-shadow: 4px 4px black; }
-  .main-info h2 {
+  .main-info h1, .main-info h2 {
     text-align: center;
     color: #d9d9d9;
     font-size: 30px;
@@ -249,38 +256,47 @@ header {
 
 .seccion-principal-info {
   display: flex;
-  text-align: center;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: none;
+  text-align: center;
   padding-top: 80px;
   padding-bottom: 40px; }
   .seccion-principal-info div {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
     background-color: #d9d9d9;
     display: block;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    text-align: center;
-    justify-content: center; }
+    border-radius: 50%; }
+    .seccion-principal-info div:hover {
+      transform: scale(1.1); }
     .seccion-principal-info div img {
-      display: flex;
       padding: 16px 50px; }
 
 .seccion-secundaria-info {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: none;
   padding: 50px; }
   .seccion-secundaria-info div {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
     background-color: #d9d9d9;
     display: block;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    text-align: center;
-    justify-content: center; }
+    text-align: center; }
+    .seccion-secundaria-info div:hover {
+      transform: scale(1.1); }
     .seccion-secundaria-info div img {
-      display: flex;
       padding: 16px 50px; }
 
 .main-contacto {
@@ -292,7 +308,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 720px; }
-  .main-contacto h1 {
+  .main-contacto h1, .main-contacto .main-info h2, .main-info .main-contacto h2 {
     text-align: center;
     color: #d9d9d9;
     font-size: 30px;
@@ -304,9 +320,9 @@ header {
     padding-bottom: 80px; }
     .main-contacto section form fieldset {
       display: flex;
+      flex-direction: column;
       width: 700px;
       height: auto;
-      flex-direction: column;
       gap: 40px; }
       .main-contacto section form fieldset label {
         display: flex;
@@ -338,7 +354,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 720px; }
-  .main-inicio-sesion h1 {
+  .main-inicio-sesion h1, .main-inicio-sesion .main-info h2, .main-info .main-inicio-sesion h2 {
     text-align: center;
     color: #d9d9d9;
     font-size: 30px;
@@ -391,9 +407,10 @@ footer {
   height: 100px; }
   footer .iconos {
     display: flex;
-    flex-grow: 1;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    flex-grow: 1;
     gap: 20px; }
 
 .icono-wa {
@@ -544,8 +561,7 @@ footer {
       width: 75px;
       height: 60px;
       padding: 0px;
-      margin-top: 20px;
-      margin-left: 40px; }
+      margin-top: 20px; }
     .seccion-principal-info div h3 {
       font-size: 16px;
       padding-top: 20px; }
@@ -557,8 +573,7 @@ footer {
       width: 75px;
       height: 60px;
       padding: 0px;
-      margin-top: 20px;
-      margin-left: 40px; }
+      margin-top: 20px; }
     .seccion-secundaria-info div h3 {
       font-size: 16px;
       padding-top: 15px; }
@@ -630,7 +645,7 @@ footer {
     font-size: 30px;
     gap: 20px;
     align-items: center; }
-  .main-index-seccion1 h1 {
+  .main-index-seccion1 h1, .main-index-seccion1 .main-info h2, .main-info .main-index-seccion1 h2 {
     font-size: 30px; }
   .logo-main {
     width: 100px;
@@ -686,8 +701,7 @@ footer {
         width: 50px;
         height: 50px;
         padding: 0px;
-        margin-top: 20px;
-        margin-left: 35px; }
+        margin-top: 20px; }
       .seccion-principal-info div h3 {
         font-size: 10px;
         padding-top: 10px; }
@@ -699,15 +713,14 @@ footer {
       width: 50px;
       height: 50px;
       padding: 0px;
-      margin-top: 20px;
-      margin-left: 35px; }
+      margin-top: 20px; }
     .seccion-secundaria-info div h3 {
       font-size: 10px;
       padding: 5px 25px; }
   .main-contacto section form fieldset {
     width: 400px; }
     .main-contacto section form fieldset label input {
-      width: 250px; }
+      width: 280px; }
   .main-inicio-sesion section div form {
     width: 400px; }
     .main-inicio-sesion section div form fieldset {

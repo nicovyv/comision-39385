@@ -13,7 +13,7 @@
     flex-direction: column;
     h1{
         text-align: center;
-        color: #d9d9d9;
+        color: $colorPrincipal;
         font-size: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -29,27 +29,24 @@
 
 
 .tienda-grid{
+    @include grid (repeat(4, 1fr), repeat(2, 1fr), center, none);
+    grid-template-areas: "card-tienda1 card-tienda2 card-tienda3 card-tienda4"
+    "card-tienda5 card-tienda6 card-tienda7 card-tienda8";
     width: 90%;
     height: auto;
-    display: grid;
-    justify-content: center;
     gap: 30px;
     padding-bottom: 40px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "card-tienda1 card-tienda2 card-tienda3 card-tienda4"
-    "card-tienda5 card-tienda6 card-tienda7 card-tienda8";
     a{
+        @include flex (column, center, center);
         width: 275px;
         height: 350px;
-        background-color: #d9d9d9;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        background-color: $colorPrincipal;
         border-radius: 15px;
         text-decoration: none;
+        transition: 400ms;
+        &:hover{
+            transform: scale(1.1);
+        }
         img{
             width: 213px;
             height: 250px;

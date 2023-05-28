@@ -3,10 +3,8 @@ footer{
     width: 100%;
     height: 100px;
     .iconos{
-        display: flex;
+        @include flex (row, center, center);
         flex-grow: 1;
-        align-items: center;
-        justify-content: center;
         gap: 20px;
     }
 }

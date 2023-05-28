@@ -9,7 +9,7 @@
     height: 720px;
     h1{
         text-align: center;
-        color: #d9d9d9;
+        color: $colorPrincipal;
         font-size: 30px;
         padding: 30px;
         text-shadow: 4px 4px black;
@@ -21,16 +21,16 @@
         form{
             fieldset{
                 display: flex;
+                flex-direction: column;
                 width: 700px;
                 height: auto;
-                flex-direction: column;
                 gap: 40px;
                 label{
                     display: flex;
                     width: 100%;
                     padding-left: 10px;
                     span{
-                        color: #d9d9d9;
+                        color: $colorPrincipal;
                         width: 70px;
                     }
                     input{
