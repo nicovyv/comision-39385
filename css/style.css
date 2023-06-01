@@ -74,7 +74,7 @@ header {
 .main-index {
   font-family: 'Playfair Display', serif;
   background-color: black;
-  background-image: url(../assets/img-fondo.png);
+  background-image: url(../assets/img-fondo2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,7 +106,9 @@ header {
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 62px 300px 62px;
-  grid-template-areas: "socks llaveros pañuelos"  "img1 img2 img3"  "scrunchies pilusos calcos"; }
+  grid-template-areas: "socks llaveros pañuelos" 
+ "img1 img2 img3" 
+ "scrunchies pilusos calcos"; }
   .index-grid h3 {
     background-color: #d9d9d9;
     width: 336px;
@@ -157,7 +159,7 @@ header {
 .main-tienda {
   font-family: 'Playfair Display', serif;
   background-color: black;
-  background-image: url(../assets/img-fondo.png);
+  background-image: url(../assets/img-fondo2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,7 +188,8 @@ header {
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   align-items: none;
-  grid-template-areas: "card-tienda1 card-tienda2 card-tienda3 card-tienda4" "card-tienda5 card-tienda6 card-tienda7 card-tienda8";
+  grid-template-areas: "card-tienda1 card-tienda2 card-tienda3 card-tienda4"
+ "card-tienda5 card-tienda6 card-tienda7 card-tienda8";
   width: 90%;
   height: auto;
   gap: 30px;
@@ -242,7 +245,7 @@ header {
 .main-info {
   font-family: 'Playfair Display', serif;
   background-color: black;
-  background-image: url(../assets/img-fondo.png);
+  background-image: url(../assets/img-fondo2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -302,7 +305,7 @@ header {
 .main-contacto {
   font-family: 'Playfair Display', serif;
   background-color: black;
-  background-image: url(../assets/img-fondo.png);
+  background-image: url(../assets/img-fondo2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -329,7 +332,7 @@ header {
         width: 100%;
         padding-left: 10px; }
         .main-contacto section form fieldset label span {
-          color: #d9d9d9;
+          color: #000000;
           width: 70px; }
         .main-contacto section form fieldset label input {
           width: 600px; }
@@ -348,7 +351,7 @@ header {
 .main-inicio-sesion {
   font-family: 'Playfair Display', serif;
   background-color: black;
-  background-image: url(../assets/img-fondo.png);
+  background-image: url(../assets/img-fondo2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -382,7 +385,7 @@ header {
             width: 100%;
             gap: 5px; }
             .main-inicio-sesion section div form fieldset label span {
-              color: #d9d9d9;
+              color: #000000;
               width: 83px; }
             .main-inicio-sesion section div form fieldset label input {
               width: 587px; }
@@ -395,11 +398,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #d9d9d9;
+  color: #000000;
   gap: 16px;
   padding-bottom: 30px; }
   .seccion-secundario-inicio-sesion div a {
-    color: #d9d9d9; }
+    color: #000000; }
 
 footer {
   display: flex;
@@ -452,7 +455,8 @@ footer {
     display: grid;
     grid-template-columns: 100px auto;
     grid-template-rows: 50px 50px;
-    grid-template-areas: "logo titulo" ". nav"; }
+    grid-template-areas: "logo titulo"
+ ". nav"; }
     header nav {
       height: 50px;
       grid-area: nav;
@@ -482,7 +486,12 @@ footer {
     width: 90%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6, auto);
-    grid-template-areas: "socks img1" "llaveros img1" "panuelos img1" "scrunchies img2 " "pilusos img2" "calcos img2"; }
+    grid-template-areas: "socks img1"
+ "llaveros img1"
+ "panuelos img1"
+ "scrunchies img2 "
+ "pilusos img2"
+ "calcos img2"; }
   .img-main1 {
     align-self: center;
     justify-self: end;
@@ -550,7 +559,10 @@ footer {
   .tienda-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "card-tienda1 card-tienda2" "card-tienda3 card-tienda4" "card-tienda5 card-tienda6" "card-tienda7 card-tienda8"; }
+    grid-template-areas: "card-tienda1 card-tienda2"
+ "card-tienda3 card-tienda4"
+ "card-tienda5 card-tienda6"
+ "card-tienda7 card-tienda8"; }
     .tienda-grid a {
       justify-self: center; }
   .seccion-principal-info div {
@@ -656,7 +668,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "socks" "llaveros" "panuelos" "scrunchies" "pilusos" "calcos"; }
+    grid-template-areas: "socks"
+ "llaveros"
+ "panuelos"
+ "scrunchies"
+ "pilusos"
+ "calcos"; }
   .img-main1 {
     display: none; }
   .img-main2 {
@@ -685,7 +702,14 @@ footer {
   .tienda-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "card-tienda1" "card-tienda2" "card-tienda3" "card-tienda4" "card-tienda5" "card-tienda6" "card-tienda7" "card-tienda8"; }
+    grid-template-areas: "card-tienda1"
+ "card-tienda2"
+ "card-tienda3"
+ "card-tienda4"
+ "card-tienda5"
+ "card-tienda6"
+ "card-tienda7"
+ "card-tienda8"; }
     .tienda-grid a {
       justify-self: center; }
   .seccion-principal-info {
