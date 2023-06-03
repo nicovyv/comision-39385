@@ -163,12 +163,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
+  background-attachment: fixed;}
   .main-tienda h1, .main-tienda .main-info h2, .main-info .main-tienda h2 {
     text-align: center;
     color: #d9d9d9;
